@@ -1,0 +1,12 @@
+<h1>This page is for more info about selected tip</h1>
+<p>Here is the tip:
+Name: <%= @tip.name %><br>
+Location: <%= @tip.location %><br>
+Tip: <%= @tip.tip %>
+<br><br>
+To edit this tip <a href = "/tips/<%=@tip.id%>/edit">Click here</a>
+<br><br>
+<%=link_to "Destroy tip", "/tips/#{@tip.id}", method: :delete, data: {confirm: "Are you sure you want to delete this tip?"} %>
+
+<br><br>
+To go back to all tips page: <a href = "/tips">click here</a>

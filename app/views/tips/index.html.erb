@@ -1,0 +1,12 @@
+<h1>Welcome to tips.com</h1>
+<h2>Home of thousands of tips</h2>
+<h6>Click on the one that want to see more info</h6>
+
+<% @tips.each do |tip|  %>
+Name:  <%= tip.name %><br>
+Location: <%= tip.location %><br>
+To see tip: <a href = "/tips/<%= tip.id %>"> Click here</a><br><br>
+<% end  %>
+
+<br><br>
+To add new tips to our database:<a href= "/tips/new"> click here</a>
